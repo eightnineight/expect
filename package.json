@@ -1,0 +1,30 @@
+{
+  "name": "@eightnineight/expect",
+  "version": "1.0.0",
+  "description": "expect checker",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eightnineight/expect.git"
+  },
+  "keywords": [
+    "expect",
+    "error",
+    "test",
+    "checker"
+  ],
+  "author": "CHIH-HSIN HSU",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eightnineight/expect/issues"
+  },
+  "homepage": "https://github.com/eightnineight/expect#readme",
+  "devDependencies": {
+    "electron": "^27.0.3"
+  }
+}
