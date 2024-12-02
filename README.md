@@ -22,6 +22,9 @@ try {
     EXPECT.LE(5, 3);
     EXPECT.GT(5, 3);
     EXPECT.GE(5, 3);
+
+    EXPECT.TRUE(5 === 3, "ERR_CUSTOM");
+    EXPECT.GE(5, 3, "ERR_CUSTOM");
 } catch (e) {
     console.log(e);
 }
@@ -69,6 +72,16 @@ try {
     // EXPECT_GE(5, 3);
     if (5 < 3) {
         throw "ERR__EXPECT_GE";
+    }
+
+    // EXPECT.TRUE(5 === 3, "ERR_CUSTOM");
+    if (!(5 === 3)) {
+        throw "ERR_CUSTOM";
+    }
+
+    // EXPECT_GE(5, 3, "ERR_CUSTOM");
+    if (5 < 3) {
+        throw "ERR_CUSTOM";
     }
 } catch (e) {
     console.log(e);

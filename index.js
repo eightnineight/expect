@@ -1,65 +1,65 @@
 // check if true
-const EXPECT_TRUE = (a) => {
+const EXPECT_TRUE = (a, err = 'ERR__EXPECT_TRUE') => {
     if (a) {
         return true;
     }
-    throw 'ERR__EXPECT_TRUE';
+    throw err;
 }
 
 // check if false
-const EXPECT_FALSE = (a) => {
+const EXPECT_FALSE = (a, err = 'ERR__EXPECT_FALSE') => {
     if (!a) {
         return true;
     }
-    throw 'ERR__EXPECT_FALSE';
+    throw err;
 }
 
 // check if equal
-const EXPECT_EQ = (a, b) => {
+const EXPECT_EQ = (a, b, err = 'ERR__EXPECT_EQ') => {
     if (a === b) {
         return true;
     }
-    throw 'ERR__EXPECT_EQ';
+    throw err;
 }
 
 // check if not equal
-const EXPECT_NE = (a, b) => {
+const EXPECT_NE = (a, b, err = 'ERR__EXPECT_NE') => {
     if (a !== b) {
         return true;
     }
-    throw 'ERR__EXPECT_NE';
+    throw err;
 }
 
 // check if a is little than b
-const EXPECT_LT = (a, b) => {
+const EXPECT_LT = (a, b, err = 'ERR__EXPECT_LT') => {
     if (a < b) {
         return true;
     }
-    throw 'ERR__EXPECT_LT';
+    throw err;
 }
 
 // check if a is little than or equal to b
-const EXPECT_LE = (a, b) => {
+const EXPECT_LE = (a, b, err = 'ERR__EXPECT_LE') => {
     if (a <= b) {
         return true;
     }
-    throw 'ERR__EXPECT_LE';
+    throw err;
 }
 
 // check if a is greater than b
-const EXPECT_GT = (a, b) => {
+const EXPECT_GT = (a, b, err = 'ERR__EXPECT_GT') => {
     if (a > b) {
         return true;
     }
-    throw 'ERR__EXPECT_GT';
+    throw err;
 }
 
 // check if a is greater than or equal to b
-const EXPECT_GE = (a, b) => {
+const EXPECT_GE = (a, b, err = 'ERR__EXPECT_GE') => {
     if (a >= b) {
         return true;
     }
-    throw 'ERR__EXPECT_GE';
+    throw err;
 }
 
 const EXPECT = {
