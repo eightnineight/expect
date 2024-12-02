@@ -11,18 +11,18 @@ npm install @eightnineight/expect
 ## Usage
 
 ```js
-import * from "@eightnineight/expect";
+import { EXPORT } from "@eightnineight/expect";
 
 try {
-    EXPECT_TRUE(5 === 3);
-    EXPECT_FALSE(5 === 3);
-    EXPECT_EQ(5, 3);
-    EXPECT_NE(5, 3);
-    EXPECT_LT(5, 3);
-    EXPECT_LE(5, 3);
-    EXPECT_GT(5, 3);
-    EXPECT_GE(5, 3);
-} catch(e) {
+    EXPECT.TRUE(5 === 3);
+    EXPECT.FALSE(5 === 3);
+    EXPECT.EQ(5, 3);
+    EXPECT.NE(5, 3);
+    EXPECT.LT(5, 3);
+    EXPECT.LE(5, 3);
+    EXPECT.GT(5, 3);
+    EXPECT.GE(5, 3);
+} catch (e) {
     console.log(e);
 }
 ```
@@ -31,32 +31,32 @@ equal to
 
 ```js
 try {
-    // EXPECT_TRUE(5 === 3);
+    // EXPECT.TRUE(5 === 3);
     if (!(5 === 3)) {
         throw "ERR__EXPECT_TRUE";
     }
 
-    // EXPECT_FALSE(5 === 3);
+    // EXPECT.FALSE(5 === 3);
     if (5 === 3) {
         throw "ERR__EXPECT_FALSE";
     }
 
-    // EXPECT_EQ(5, 3);
+    // EXPECT.EQ(5, 3);
     if (5 !== 3) {
         throw "ERR__EXPECT_EQ";
     }
 
-    // EXPECT_NE(5, 3);
+    // EXPECT.NE(5, 3);
     if (5 !== 3) {
         throw "ERR__EXPECT_NE";
     }
 
-    // EXPECT_LT(5, 3);
+    // EXPECT.LT(5, 3);
     if (5 >= 3) {
         throw "ERR__EXPECT_LT";
     }
 
-    // EXPECT_LE(5, 3);
+    // EXPECT.LE(5, 3);
     if (5 > 3) {
         throw "ERR__EXPECT_LE";
     }

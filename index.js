@@ -62,13 +62,17 @@ const EXPECT_GE = (a, b) => {
     throw 'ERR__EXPECT_GE';
 }
 
+const EXPECT = {
+    TRUE: EXPECT_TRUE,
+    FALSE: EXPECT_FALSE,
+    EQ: EXPECT_EQ,
+    NE: EXPECT_NE,
+    LT: EXPECT_LT,
+    LE: EXPECT_LE,
+    GT: EXPECT_GT,
+    GE: EXPECT_GE,
+};
+
 export {
-    EXPECT_TRUE,
-    EXPECT_FALSE,
-    EXPECT_EQ,
-    EXPECT_NE,
-    EXPECT_LT,
-    EXPECT_LE,
-    EXPECT_GT,
-    EXPECT_GE,
+    EXPECT,
 };
