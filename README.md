@@ -11,7 +11,7 @@ npm install @eightnineight/expect
 ## Usage
 
 ```js
-import { EXPORT } from "@eightnineight/expect";
+import { EXPECT } from "@eightnineight/expect";
 
 try {
     EXPECT.TRUE(5 === 3);
