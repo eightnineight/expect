@@ -1,17 +1,23 @@
 {
   "name": "@eightnineight/expect",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "expect checker",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/eightnineight/expect.git"
   },
+  "files": [
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "index.js"
+  ],
   "keywords": [
     "expect",
     "error",
@@ -25,6 +31,11 @@
   },
   "homepage": "https://github.com/eightnineight/expect#readme",
   "devDependencies": {
-    "electron": "^27.0.3"
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
   }
 }
